@@ -146,7 +146,7 @@
 
             return $this -> getName() . ' '
             . $this -> getSurname() . ': €'
-            . $this -> getSalary() . "("
+            . $this -> getSalary() . " ("
             . $this -> getHiringDate() . ")";
         }
 
@@ -162,11 +162,11 @@
     $e1 -> setSalary(1200);
     $e1 -> setHiringDate("23/05/2007");
 
-    $e2 = new Employee($p2 -> getName(), $p1 -> getSurname(), $salary);
+    $e2 = new Employee($p2 -> getName(), $p2 -> getSurname(), $salary);
     $e2 -> setSalary(1300);
     $e2 -> setHiringDate("13/07/2005");
 
-    $e3 = new Employee($p3 -> getName(), $p1 -> getSurname(), $salary);
+    $e3 = new Employee($p3 -> getName(), $p3 -> getSurname(), $salary);
     $e3 -> setSalary(1400);
     $e3 -> setHiringDate("03/09/2003");
 
